@@ -1,0 +1,13 @@
+# Test post
+- title: 'First post!'
+  posted: 2020-02-18
+  live: true
+  image: 'hrrp://asgasag.com'
+  text: |
+        This is a test.
+        Could this work?
+        Answer - yeah!.
+  link: 'HTTP://ASDGASDG.COM'
+  tags:
+    - gamedev
+    - indie
