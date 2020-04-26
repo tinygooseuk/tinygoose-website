@@ -1,7 +1,7 @@
 /* Desktop-specific overrides */
 
 body {
-    background-color: #FC6320;  
+    background-color: #804080;  
     background-image: url(/img/bg.gif);
 }
 
@@ -22,7 +22,7 @@ nav {
 }
 
 #company-name {
-    margin: 20px auto !important;
+    margin: 0 auto;
 }
 
 a.nav-link:hover {

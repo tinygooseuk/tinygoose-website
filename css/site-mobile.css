@@ -15,7 +15,7 @@ nav {
 
 
 #company-name {
-    margin: auto auto !important;
+    margin: 0 auto !important;
 }
 
 a.nav-link {

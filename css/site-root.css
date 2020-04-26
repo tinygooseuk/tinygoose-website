@@ -8,7 +8,7 @@ html {
 
 body {
     font-family: 'Patrick Hand', Verdana, Arial, Helvetica, sans-serif;
-    font-size: 16pt;
+    font-size: 18pt;
     color: black;
     height: 100%;
 
@@ -51,7 +51,7 @@ form {
 
 nav {
     font-family: 'Chewy', Verdana, Arial, Helvetica, sans-serif;
-    font-size: 20pt;
+    font-size: 22pt;
 }
 
 h1 {
@@ -143,14 +143,13 @@ h2 {
 
 
 #company-name {
-    font-size: 44pt;
-    text-align: center;
-    
-    font-family: 'Chewy', Verdana, Arial, Helvetica, sans-serif;
+    width: 250px;
+    height: 130px;
         
-    -webkit-text-stroke: 3px black;
-    color: white;
-    text-shadow: 3px 3px 0 rgba(0,0,0,0.3), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: 0 auto;
+        
+    background-image: url(/img/company-name.png);
+    background-size: 250px 130px;
 }
 
 

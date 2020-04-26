@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TinyGoose</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />        
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet"                              type="text/css" href="/css/site-root.css" />
+        <link rel="stylesheet" media="(min-width:775px)"    type="text/css" href="/css/site-normal.css" />
+        <link rel="stylesheet" media="(max-width:774px)"    type="text/css" href="/css/site-mobile.css" />
+                
+        <meta name="description" content="Tiny Goose - British indie game studio" />
+        <meta name="keywords" content="Tiny Goose,TinyGoose,C++,C#,Godot,Unreal,video games,games,gamedev,indie,studio,Objective-C,iPhone,iPad,iOS,Joe Flood,C,CSharp,C#,Javawag,software,mobile" />
+        <meta name="author" content="Joe Flood" />
+        
+        <style>
+            img.post-image {
+                width: 200px;
+                height: 200px;
+                             
+                margin: 5px 20px;
+                
+                object-fit: cover;
+                
+                border-radius: 100px;
+                border-style: solid;
+                border-color: #FC6320;
+                border-width: 5px;
+            }
+               
+            @media screen and (max-width:540px) {
+                img.post-image { 
+                    clear: both;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                }
+            } 
+            @media screen and (min-width:540px) {
+                img.post-image { 
+                    float: right;
+                }
+            }
+
+            .draft { 
+                opacity: 0.4
+            }
+            
+            div.post {
+                padding: 20px;
+                border-radius: 20px;
+            }
+         
+            span.author {
+                text-align: center;
+                
+            }
+            
+            div.post:hover {
+                background-color: lightgray;
+                cursor: pointer;
+            }            
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="contentliquid">
+                <div id="content">
+                    <!-- Post -->
+                    <div class="post" data-postid="117">
+                        <h1>TITLE</h1>
+                        <span class="author"><h2>by AUTHOR on DATE</h2></span>
+                        <a href="https://link">
+                            <br /><br />
+                            <img class="post-image" src="thumb.png" />
+                        </a>
+                                
+                        <div>
+                            CONTENT
+                        </div>
+                    </div>
+                    
+                    <hr style="clear: both" />
+            
+                    <!-- more posts ... -->
+                
+                    <div style="float:right"><a href="/?p=1">Older</a>
+                </div>
+        
+                <!-- FOOTER -->
+                <div style="clear:both"></div>
+                     
+                      <hr />
+                
+                      &copy;2016-present TinyGoose Ltd. All rights reserved.
+                      <br/>
+                      TinyGoose Limited is a company registered in England & Wales with company number 10285773.
+                </div>	
+            </div>
+
+            <!-- NAV -->
+            <nav>
+                <a href="/">
+                    <div id="banner-logo"></div>
+                </a>
+                
+                <div id="company-name"></div>
+                
+                <!-- LINKS -->
+                <ul id="nav-links">
+                    <li class="nav-item"><a class="nav-link" href="/">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about-us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/games.html">Our Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact Us</a></li>                                       
+                </ul>
+            </nav>
+        </div>                     
+        
+        <!-- jQuery/Bootstrap -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+                
+        <!-- GA Tracking -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-86306734-3', 'auto');
+            ga('send', 'pageview');
+
+          </script>
+        
+        <script type="text/javascript">
+            $(function() {
+                $(".post").click(function() {
+                   var id = $(this).attr("data-postid");
+                   
+                   window.location = "/blog/view_post.html?post=" + id;
+                });
+            });
+        </script>
+    </body>
+</html>
