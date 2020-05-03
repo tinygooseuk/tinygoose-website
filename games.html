@@ -35,13 +35,47 @@
         <meta name="description" content="Tiny Goose - British indie game studio" />
         <meta name="keywords" content="Tiny Goose,TinyGoose,C++,C#,Godot,Unreal,video games,games,gamedev,indie,studio,Objective-C,iPhone,iPad,iOS,Joe Flood,C,CSharp,C#,Javawag,software,mobile" />
         <meta name="author" content="Joe Flood" />
+
+        <!-- Page styles here -->
     </head>
     <body>
         <div id="wrapper">
             <div id="contentliquid">
                 <div id="content">
-                    
-                </div>	
+                    <h1>Our Games</h1>
+
+                    <h2>Social Distancing</h2>
+                    <div>
+                        We made a game in 3 hours for a game jam - TriJam. See our <a href="/blog-post.html?post=9">blog post</a> for more info on that!
+                        <br/>
+                        Now we're iterating on that tiny prototype and making it into a full (ish) game. Stay tuned for more on that one.
+                    </div>
+                    <br />
+
+                    <h2>Chump Party</h2>
+                    <div>
+                        We're currently working a couch multiplayer puzzle-platformer. There's nothing too juicy to show yet, but for now please enjoy a no-context screenshot:
+                    </div>
+
+                    <br />
+
+                    <img class="image-round" src="https://imgur.com/ne7yZSE.png" />
+
+                    <br /><br />
+
+                    <h2>12 games of 2019</h2>
+                    <div>
+                        We started making 12 games for 2019, but stopped after just 5. Still the ones we did make we're super happy with, so
+                        please go check them out on our <a href="/">blog</a> or on <a href="//tinygoose.itch.io">itch.io</a>, if that's your thing!
+                    </div>
+
+                    <br />
+
+                    <h2>A.O.B.</h2>
+                    <div>
+                        For more news on our games, keep an eye on our <a href="/">blog</a> - or better, give us a follow on the ol' <a href="//twitter.com/TinyGooseUK">Twitter</a> or <a href="//instagram.com/tinygooseuk">Instagram</a>!
+                    </div>
+                </div>
             </div>
         </div>                     
         
@@ -50,16 +84,10 @@
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/common.js"></script>
        
-        <script src="//cdnjs.cloudflare.com/ajax/libs/yamljs/0.3.0/yaml.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
-        <script src="/js/blog.js"></script>
-
         <!-- Page scripts here: -->
         <script type="text/javascript">
             $(function() {
-                // Download and render the blog
-                let pg = getArgs()["p"] ?? "1";
-                createBlog(3, parseInt(pg) - 1);
+                $("#age").text(getJoesAge());
             });
         </script>
     </body>

@@ -52,14 +52,21 @@
        
         <script src="//cdnjs.cloudflare.com/ajax/libs/yamljs/0.3.0/yaml.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+
         <script src="/js/blog.js"></script>
 
         <!-- Page scripts here: -->
-        <script type="text/javascript">
+        <script type="text/javascript">    
             $(function() {
-                // Download and render the blog
-                let pg = getArgs()["p"] ?? "1";
-                createBlog(3, parseInt(pg) - 1);
+                // Get blog post
+                let postIndex = getArgs()["post"];
+
+                if (!postIndex) {
+                    window.location = "/";
+                    return;
+                }
+
+                createSingleBlogPost(parseInt(postIndex));
             });
         </script>
     </body>

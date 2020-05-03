@@ -5,7 +5,7 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        
+
         <link rel="apple-touch-icon" sizes="57x57" href="/img/icon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/img/icon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/img/icon/apple-icon-72x72.png">
@@ -35,12 +35,75 @@
         <meta name="description" content="Tiny Goose - British indie game studio" />
         <meta name="keywords" content="Tiny Goose,TinyGoose,C++,C#,Godot,Unreal,video games,games,gamedev,indie,studio,Objective-C,iPhone,iPad,iOS,Joe Flood,C,CSharp,C#,Javawag,software,mobile" />
         <meta name="author" content="Joe Flood" />
+
+        <!-- Page styles here -->
+        <style>            
+            li.padded {
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+            
+            img.social-icon {
+                transition: 0.5s all;
+                -webkit-transition: 0.5s all;
+                
+                width: 48px;
+                height: 48px;
+                
+                margin-right: 5px;
+                margin-top: 16px;
+            }
+            
+            img.social-icon:hover {
+                width: 64px;
+                height: 64px;
+                
+                margin-top: 0px;
+            }
+            
+            img.big-social-icon {
+                transition: 0.5s all;
+                -webkit-transition: 0.5s all;
+                
+                width: 64px;
+                height: 64px;
+                
+                margin-right: 5px;
+                margin-top: 16px;
+            }
+            
+            img.big-social-icon:hover {
+                width: 96px;
+                height: 96px;
+                
+                margin-top: 0px;
+            }
+        </style>
     </head>
     <body>
         <div id="wrapper">
             <div id="contentliquid">
                 <div id="content">
-                    
+                    <h1>Contact Us</h1>
+                    <div>
+                        Our old site had a really clever contact us form, which took me several hours to code together and perfect in PHP. 
+                        Needless to say, it was literally (and I mean literally literally) <strong>never</strong> used. Not even once.
+                        Okay once, but it was spam. 
+
+                        <br /><br />
+
+                        Anyway, if you want to get in contact, click one of the bubbles (presented in descending order of most likely to reply):
+                    </div>
+                    <div class="pad">
+                        <div style="text-align: center;">
+                            <a href="mailto:hello@tinygoose.com"><img src="/img/social/email.png" class="big-social-icon"></img></a>
+                            <a href="https://twitter.com/tinygooseuk" target="_blank"><img src="/img/social/twitter.png" class="big-social-icon"></img></a>
+                            <a href="https://instagram.com/tinygooseuk" target="_blank"><img src="/img/social/insta.png" class="big-social-icon"></img></a>
+                            <a href="http://www.linkedin.com/profile/view?id=204484236" target="_blank"><img src="/img/social/linkedin.png" class="big-social-icon"></img></a>
+                            <a href="https://www.reddit.com/u/tinygooseuk" target="_blank"><img src="/img/social/reddit.png" class="big-social-icon"></img></a>        
+                            <a href="https://www.youtube.com/channel/UCE6g89NVFjEWJQj9EVUWZ_g" target="_blank"><img src="/img/social/youtube.png" class="big-social-icon"></img></a>        
+                        </div>
+                    </div>
                 </div>	
             </div>
         </div>                     
@@ -50,17 +113,6 @@
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/common.js"></script>
        
-        <script src="//cdnjs.cloudflare.com/ajax/libs/yamljs/0.3.0/yaml.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
-        <script src="/js/blog.js"></script>
-
         <!-- Page scripts here: -->
-        <script type="text/javascript">
-            $(function() {
-                // Download and render the blog
-                let pg = getArgs()["p"] ?? "1";
-                createBlog(3, parseInt(pg) - 1);
-            });
-        </script>
     </body>
 </html>
