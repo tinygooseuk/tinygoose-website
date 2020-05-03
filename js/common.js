@@ -45,10 +45,11 @@ $(() => {
         linkEl.text(link.title);
         
         let liEl = $('<li class="nav-item"></li>');
-        
         linkEl.appendTo(liEl);
+       
         liEl.appendTo("#nav-links");
     });
+    $('<br/>').appendTo("#nav-links");
 
     // Add footer
     let footer = `
