@@ -19,6 +19,8 @@ nav {
     width: 250px;
     height: 100%;
     position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #contentliquid {
