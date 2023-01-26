@@ -25,10 +25,12 @@ p {
 }
 
 a {
-    color: #FC6320;
+    color: white;
     text-shadow: 0px 0px 16px orange;
 }
-
+a:hover {
+    color: yellow;
+}
 form {
     margin: 10px 0 20px 0; 
 }
