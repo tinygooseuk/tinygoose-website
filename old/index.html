@@ -44,34 +44,32 @@
             gtag('js', new Date());
             gtag('config', 'G-ES5CDYQQQV');
         </script>
-
-        <style>
-            #banner-image
-            {
-                max-width:500px;
-                max-height:500px;
-                width: auto;
-                height: auto;
-                display: block;
-                margin: auto;  
-            }
-            #coming-soon
-            {
-                color: white;
-                display: block;
-                margin: auto;  
-                text-align: center;
-                font-size: 3em;
-                line-height: 1em;
-            }
-        </style>
     </head>
     <body>
-        &nbsp;
-        <br />
-        <br />
-        <img id="banner-image" src="img/tg-logo-new.png" />
-        &nbsp;
-        <span id="coming-soon">Coming Soon...</span>
+        <div id="wrapper">
+            <div id="contentliquid">
+                <div id="content">
+                    
+                </div>	
+            </div>
+        </div>                     
+        
+        <!-- jQuery/Bootstrap -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/common.js"></script>
+       
+        <script src="//cdnjs.cloudflare.com/ajax/libs/yamljs/0.3.0/yaml.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+        <script src="/js/blog.js"></script>
+
+        <!-- Page scripts here: -->
+        <script type="text/javascript">
+            $(function() {
+                // Download and render the blog
+                let pg = getArgs()["p"] ?? "1";
+                createBlog(3, parseInt(pg) - 1);
+            });
+        </script>
     </body>
 </html>
