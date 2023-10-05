@@ -23,14 +23,13 @@ $(() => {
     // Setup nav
     let navRoot = `<!-- NAV -->
         <nav>
-            <a href="/">
-                <div id="banner-logo"></div>
+            <a id="banner-link" href="/">
+                <span id="banner-logo"></div>
             </a>
             
-            <div id="company-name"></div>
             <ul id="nav-links" />                                                    
         </nav>`;
-    $(navRoot).appendTo("#wrapper");
+    $("#wrapper").prepend($(navRoot));
 
     const links = [
         { title: "Home", url: "/" },

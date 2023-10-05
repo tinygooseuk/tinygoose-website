@@ -6,14 +6,21 @@ html {
     height: 100%;
 }
 
+nav {
+    color: white;
+    font-family: 'Gabarito', Verdana, Arial, Helvetica, sans-serif;
+    font-size: 22pt;
+
+    display: flex;
+}
+
 body {
+    background-color: #800080;
+
     font-family: 'Roboto', Verdana, Arial, Helvetica, sans-serif;
     font-size: 14pt;
     color: black;
     height: 100%;
-
-    background-repeat: repeat-y;
-    background-position: 250px 0px;
     
     line-height: 140%;
     
@@ -29,9 +36,12 @@ a {
     text-shadow: 0px 0px 4px orange;
 }
 
-form {
-    margin: 10px 0 20px 0; 
+iframe {
+    display: block;
+    width: 75%;
+    margin: auto
 }
+
 
 #wrapper {
     width: 100%;
@@ -41,16 +51,15 @@ form {
 
 
 #content {
-    padding: 20px;
+    padding: 20px 200px;
+}
+
+#contentliquid {
+    background-color: white;
 }
 
 #footer {
     font-size: 70%;
-}
-
-nav {
-    font-family: 'Gabarito', Verdana, Arial, Helvetica, sans-serif;
-    font-size: 22pt;
 }
 
 h1 {
@@ -61,7 +70,7 @@ h1 {
     font-size: 2.5em;
     line-height: 1.05em;
     text-align: center;
-    text-shadow: 2px 2px 0 rgba(0,0,0,0.3), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: 1px 2px 0 rgba(0,0,0,0.3), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 h2 {
@@ -70,7 +79,7 @@ h2 {
     font-size: 1.5em;
     margin: 5px auto;
     /*text-align: center;*/
-    text-shadow: 2px 2px 0 rgba(0,0,0,0.3), -1px -1px 0 #3C4349, 1px -1px 0 #3C4349, -1px 1px 0 #3C4349, 1px 1px 0 #3C4349;
+    text-shadow: 1px 2px 0 rgba(0,0,0,0.3), -1px -1px 0 #3C4349, 1px -1px 0 #3C4349, -1px 1px 0 #3C4349, 1px 1px 0 #3C4349;
 }
 
 li {
@@ -78,16 +87,20 @@ li {
 }
 
 /* Logo etc. */
+#banner-link {
+    display: inline-flex;
+}
+
 #banner-logo {
-    width: 220px;
-    height: 220px;
+    width: 271px;
+    height: 106px;
         
     margin: 10px auto;
       
-    background-image: url(/img/banner-logo.png);
-    background-size: 222px 222px;
+    background-image: url(/img/logo.png);
+    background-size: 271px 106px;
 }
-#banner-logo:hover {
+/* #banner-logo:hover {
     animation: logo-wiggle linear 0.2s;
     animation-iteration-count: infinite;
     transform-origin: 50% 85%;
@@ -102,7 +115,7 @@ li {
     -o-transform-origin: 50% 85%;
    
     background-image: url(/img/banner-logo-hover.png);
-}
+} */
 
 
 @keyframes logo-wiggle{
@@ -142,28 +155,20 @@ li {
 
 
 
-#company-name {
-    width: 250px;
-    height: 130px;
-        
-    margin: 0 auto;
-        
-    background-image: url(/img/company-name.png);
-    background-size: 250px 130px;
-}
-
 
 ul#nav-links {
     list-style-type: none;
-    margin-top: 100px;
+    display: inline-flex;
 }
 
 li.nav-item {
-    margin: 15px 0px !important;
+    margin: 15px 15px !important;
     transition: 0.5s all !important;
+    display: block;
+    margin: auto 20px !important;
 }
 li.nav-item:hover {
-    margin-left: 10px !important;
+    transform: scale(1.2);
 }
 
 a.nav-link {
@@ -179,6 +184,11 @@ hr {
     background-color: gray;
 }
 
+.image-round {
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
