@@ -33,9 +33,9 @@ $(() => {
     $(navRoot).appendTo("#wrapper");
 
     const links = [
-        { title: "Blog", url: "/" },
-        { title: "About Us", url: "/about-us.html" },
-        { title: "Our Games", url: "/games.html" },
+        { title: "Home", url: "/" },
+        { title: "Games", url: "/games.html" },
+        { title: "Assets", url: "/assets.html" },
         { title: "Contact Us", url: "/contact.html" }, 
     ];
 
@@ -53,7 +53,7 @@ $(() => {
 
     // Add footer
     let footer = `
-        <div>
+        <div id="footer">
             <!-- FOOTER -->
             <div style="clear:both"></div>
                 

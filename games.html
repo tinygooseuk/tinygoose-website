@@ -5,7 +5,7 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+        
         <link rel="apple-touch-icon" sizes="57x57" href="/img/icon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/img/icon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/img/icon/apple-icon-72x72.png">
@@ -37,48 +37,6 @@
         <meta name="author" content="Joe Flood" />
 
         <!-- Page styles here -->
-        <style>            
-            li.padded {
-                margin-top: 8px;
-                margin-bottom: 8px;
-            }
-            
-            img.social-icon {
-                transition: 0.5s all;
-                -webkit-transition: 0.5s all;
-                
-                width: 48px;
-                height: 48px;
-                
-                margin-right: 5px;
-                margin-top: 16px;
-            }
-            
-            img.social-icon:hover {
-                width: 64px;
-                height: 64px;
-                
-                margin-top: 0px;
-            }
-            
-            img.big-social-icon {
-                transition: 0.5s all;
-                -webkit-transition: 0.5s all;
-                
-                width: 64px;
-                height: 64px;
-                
-                margin-right: 5px;
-                margin-top: 16px;
-            }
-            
-            img.big-social-icon:hover {
-                width: 96px;
-                height: 96px;
-                
-                margin-top: 0px;
-            }
-        </style>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ES5CDYQQQV"></script>
@@ -93,32 +51,20 @@
         <div id="wrapper">
             <div id="contentliquid">
                 <div id="content">
-                    <h1>Contact Us</h1>
+                    <h1>Our Games</h1>
+
+                    <h2>Chump Party</h2>
                     <div>
-                        So, once upon a time, our old site had a really clever contact us form, which took me several hours to code 
-                        together and perfect in PHP. We then migrated to JavaScript and it was painstakingly converted across. 
-                        Soon after that, it was converted to Java/JSP, and re-implemented for a 3rd time.
-                        Needless to say, it was literally (and I mean literally literally) <strong>never</strong> used. Not even once.
-                        Okay once, but it was spam. So I'm not doing a form. No, I won't. Seriously, stop asking me for one!!!
-
-                        <br /><br />
-
-                        Anyway, if you would like to get in contact with us, you're more than welcome to click one of the bubbles below:
-                        (presented in descending order of quickest/most likely to reply)
-
-                        <br />
+                        We're currently working a couch multiplayer puzzle-platformer. There's nothing too juicy to show yet, but for now please enjoy a video of our journey so far:
                     </div>
-                    <div class="pad">
-                        <div style="text-align: center;">
-                            <a href="mailto:hello@tinygoose.com"><img src="/img/social/email.png" class="big-social-icon"></img></a>
-                            <a href="https://twitter.com/tinygooseuk" target="_blank"><img src="/img/social/twitter.png" class="big-social-icon"></img></a>
-                            <a href="https://instagram.com/tinygooseuk" target="_blank"><img src="/img/social/insta.png" class="big-social-icon"></img></a>
-                            <a href="http://www.linkedin.com/profile/view?id=204484236" target="_blank"><img src="/img/social/linkedin.png" class="big-social-icon"></img></a>
-                            <a href="https://www.reddit.com/u/tinygooseuk" target="_blank"><img src="/img/social/reddit.png" class="big-social-icon"></img></a>        
-                            <a href="https://www.youtube.com/channel/UCE6g89NVFjEWJQj9EVUWZ_g" target="_blank"><img src="/img/social/youtube.png" class="big-social-icon"></img></a>        
-                        </div>
-                    </div>
-                </div>	
+
+                    <br />
+                    <iframe width="640" height="400" src="https://www.youtube.com/embed/ZIgobGzEIWc?si=o_VJWbYc4iPneObb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <!--<img class="image-round" src="https://imgur.com/ne7yZSE.png" />-->
+
+                    <br /><br />
+                </div>
             </div>
         </div>                     
         
@@ -128,5 +74,10 @@
         <script src="/js/common.js"></script>
        
         <!-- Page scripts here: -->
+        <script type="text/javascript">
+            $(function() {
+                $("#age").text(getJoesAge());
+            });
+        </script>
     </body>
 </html>

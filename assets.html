@@ -36,6 +36,8 @@
         <meta name="keywords" content="Tiny Goose,TinyGoose,C++,C#,Godot,Unreal,video games,games,gamedev,indie,studio,Objective-C,iPhone,iPad,iOS,Joe Flood,C,CSharp,C#,Javawag,software,mobile" />
         <meta name="author" content="Joe Flood" />
 
+        <!-- Page styles here -->
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ES5CDYQQQV"></script>
         <script>
@@ -49,8 +51,49 @@
         <div id="wrapper">
             <div id="contentliquid">
                 <div id="content">
+                    <h1>Unity Assets</h1>
+
+                    <h2>Addresses</h2>
+                    <div>
+                        Want to use Addressables from scripts, but find yourself using "magic strings" everywhere? You need Addresses!
+                    </div>
+
+                    <br />
+                    <div style="clear:both"></div>
+
+                    <a href="https://assetstorev1-prd-cdn.unity3d.com/key-image/c0ff3c89-8279-4306-b729-87ea6c9ab0f9.webp">
+                        <img class="image-round" src="https://assetstorev1-prd-cdn.unity3d.com/key-image/c0ff3c89-8279-4306-b729-87ea6c9ab0f9.webp" />
+                    </a>
+
+                    <br />
+                    <div style="clear:both"></div>
+                    <br />
                     
-                </div>	
+
+                    <div>
+                        Addresses is a small set of scripts that allow you to easily load assets asynchronously using Unity's Addressables system, without needing to hardcode strings everywhere.
+
+                        Instead of loading "P_MyCoolestPrefab", load Addresses.Prefabs.Coolest. Or Addresses.Gameplay.Cool. Or whatever you want to call it.
+                    </div>
+
+                    <br />
+
+                    <div>
+                        Find it on the Unity Asset Store here!
+                        <br />
+                        <a href="https://assetstore.unity.com/packages/slug/267056">https://assetstore.unity.com/packages/slug/267056</a>
+                    </div>
+                
+                    <br />
+
+                    <div>
+                        Email us for support here!
+                        <br />
+                        <a href="mailto:hello@tinygoose.com">hello@tinygoose.com</a>
+                    </div>
+                
+                    <br />
+                </div>
             </div>
         </div>                     
         
@@ -59,16 +102,10 @@
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/common.js"></script>
        
-        <script src="//cdnjs.cloudflare.com/ajax/libs/yamljs/0.3.0/yaml.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
-        <script src="/js/blog.js"></script>
-
         <!-- Page scripts here: -->
         <script type="text/javascript">
             $(function() {
-                // Download and render the blog
-                let pg = getArgs()["p"] ?? "1";
-                createBlog(3, parseInt(pg) - 1);
+                $("#age").text(getJoesAge());
             });
         </script>
     </body>

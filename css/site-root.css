@@ -1,14 +1,14 @@
 /* Root/Base CSS file */
 
-@import url('//fonts.googleapis.com/css?family=Chewy|Patrick+Hand');
+@import url('//fonts.googleapis.com/css?family=Gabarito|Roboto');
 
 html {
     height: 100%;
 }
 
 body {
-    font-family: 'Patrick Hand', Verdana, Arial, Helvetica, sans-serif;
-    font-size: 18pt;
+    font-family: 'Roboto', Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14pt;
     color: black;
     height: 100%;
 
@@ -25,12 +25,10 @@ p {
 }
 
 a {
-    color: white;
-    text-shadow: 0px 0px 16px orange;
+    color: #FC6320;
+    text-shadow: 0px 0px 4px orange;
 }
-a:hover {
-    color: yellow;
-}
+
 form {
     margin: 10px 0 20px 0; 
 }
@@ -46,31 +44,33 @@ form {
     padding: 20px;
 }
 
+#footer {
+    font-size: 70%;
+}
+
 nav {
-    font-family: 'Chewy', Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Gabarito', Verdana, Arial, Helvetica, sans-serif;
     font-size: 22pt;
 }
 
 h1 {
-    font-family: 'Chewy', Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Gabarito', Verdana, Arial, Helvetica, sans-serif;
     color: #FC6320;
     margin: 2px auto;
     padding: 20px;
     font-size: 2.5em;
     line-height: 1.05em;
     text-align: center;
-    -webkit-text-stroke: 1px black;
-    text-shadow: 3px 3px 0 rgba(0,0,0,0.3), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.3), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 h2 {
-    font-family: 'Chewy', Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Gabarito', Verdana, Arial, Helvetica, sans-serif;
     color: orange; /*#3C4349;*/
     font-size: 1.5em;
     margin: 5px auto;
     /*text-align: center;*/
-    -webkit-text-stroke: 1px #3C4349;
-    text-shadow: 3px 3px 0 rgba(0,0,0,0.3), -1px -1px 0 #3C4349, 1px -1px 0 #3C4349, -1px 1px 0 #3C4349, 1px 1px 0 #3C4349;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.3), -1px -1px 0 #3C4349, 1px -1px 0 #3C4349, -1px 1px 0 #3C4349, 1px 1px 0 #3C4349;
 }
 
 li {
@@ -169,7 +169,6 @@ li.nav-item:hover {
 a.nav-link {
     color: white;
     text-decoration: none;
-    -webkit-text-stroke: 1.5px black;
     /* color: white; */
     text-shadow: 3px 3px 0 rgba(0,0,0,0.3), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }

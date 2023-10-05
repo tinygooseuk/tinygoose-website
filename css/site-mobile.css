@@ -1,11 +1,8 @@
 /* Mobile-specific overrides */
 
 body {
-    background-color: #800080;  
-    line-height: 140%;
-
+    background-color: white;
 }
-
 
 #content {
     margin: 0 !important;

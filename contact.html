@@ -5,7 +5,7 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        
+
         <link rel="apple-touch-icon" sizes="57x57" href="/img/icon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/img/icon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/img/icon/apple-icon-72x72.png">
@@ -37,6 +37,48 @@
         <meta name="author" content="Joe Flood" />
 
         <!-- Page styles here -->
+        <style>            
+            li.padded {
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+            
+            img.social-icon {
+                transition: 0.5s all;
+                -webkit-transition: 0.5s all;
+                
+                width: 48px;
+                height: 48px;
+                
+                margin-right: 5px;
+                margin-top: 16px;
+            }
+            
+            img.social-icon:hover {
+                width: 64px;
+                height: 64px;
+                
+                margin-top: 0px;
+            }
+            
+            img.big-social-icon {
+                transition: 0.5s all;
+                -webkit-transition: 0.5s all;
+                
+                width: 64px;
+                height: 64px;
+                
+                margin-right: 5px;
+                margin-top: 16px;
+            }
+            
+            img.big-social-icon:hover {
+                width: 96px;
+                height: 96px;
+                
+                margin-top: 0px;
+            }
+        </style>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ES5CDYQQQV"></script>
@@ -51,42 +93,28 @@
         <div id="wrapper">
             <div id="contentliquid">
                 <div id="content">
-                    <h1>Our Games</h1>
-
-                    <h2>Chump Party</h2>
+                    <h1>Contact Us</h1>
                     <div>
-                        We're currently working a couch multiplayer puzzle-platformer. There's nothing too juicy to show yet, but for now please enjoy a no-context screenshot:
+                        We'd love to hear from you!
+
+                        <br /><br />
+
+                        If you would like to get in contact with us, you're more than welcome to click one of the bubbles below:
+                        (presented in descending order of quickest/most likely to reply)
+
+                        <br />
                     </div>
-
-                    <br />
-
-                    <img class="image-round" src="https://imgur.com/ne7yZSE.png" />
-
-                    <br /><br />
-
-                    <!-- -->
-
-                    <h2>Social Distancing</h2>
-                    <div>
-                        We also made a game in 3 hours for a game jam - TriJam. See our <a href="/blog-post.html?post=9">blog post</a> for more info on that!
+                    <div class="pad">
+                        <div style="text-align: center;">
+                            <a href="mailto:hello@tinygoose.com"><img src="/img/social/email.png" class="big-social-icon"></img></a>
+                            <a href="https://twitter.com/tinygooseuk" target="_blank"><img src="/img/social/twitter.png" class="big-social-icon"></img></a>
+                            <a href="https://instagram.com/tinygooseuk" target="_blank"><img src="/img/social/insta.png" class="big-social-icon"></img></a>
+                            <a href="https://www.linkedin.com/profile/view?id=204484236" target="_blank"><img src="/img/social/linkedin.png" class="big-social-icon"></img></a>
+                            <a href="https://www.reddit.com/u/tinygooseuk" target="_blank"><img src="/img/social/reddit.png" class="big-social-icon"></img></a>        
+                            <a href="https://www.youtube.com/channel/UCE6g89NVFjEWJQj9EVUWZ_g" target="_blank"><img src="/img/social/youtube.png" class="big-social-icon"></img></a>        
+                        </div>
                     </div>
-                    <br />
-
-                    <!-- -->
-
-                    <h2>12 games of 2019</h2>
-                    <div>
-                        We started making 12 games for 2019, but stopped after just 5. Still, we're super happy with the ones that we did make, so
-                        please go check them out on our <a href="/">blog</a> or on <a href="//tinygoose.itch.io">itch.io</a>, if that's your thing!
-                    </div>
-
-                    <br />
-
-                    <h2>A.O.B.</h2>
-                    <div>
-                        For more news on our games, keep an eye on our <a href="/">blog</a> - or better, give us a follow on the ol' <a href="//twitter.com/TinyGooseUK">Twitter</a> or <a href="//instagram.com/tinygooseuk">Instagram</a>!
-                    </div>
-                </div>
+                </div>	
             </div>
         </div>                     
         
@@ -96,10 +124,5 @@
         <script src="/js/common.js"></script>
        
         <!-- Page scripts here: -->
-        <script type="text/javascript">
-            $(function() {
-                $("#age").text(getJoesAge());
-            });
-        </script>
     </body>
 </html>
