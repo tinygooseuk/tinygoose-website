@@ -174,12 +174,7 @@ li.nav-item {
     display: block;
     margin: auto 20px !important;
 }
-li.nav-item:hover {
-    transform: scale(1.4);
-    background-color: #FC6320;
-    padding: 20px 40px;
-    border-radius: 50px;
-}
+
 
 a.nav-link {
     color: white;
