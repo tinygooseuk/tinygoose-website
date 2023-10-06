@@ -1,6 +1,5 @@
 /* Root/Base CSS file */
-
-@import url('//fonts.googleapis.com/css?family=Gabarito|Roboto');
+@import url('//fonts.googleapis.com/css?family=Dela+Gothic+One|Roboto');
 
 html {
     height: 100%;
@@ -8,7 +7,7 @@ html {
 
 nav {
     color: white;
-    font-family: 'Gabarito', Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Dela Gothic One', Verdana, Arial, Helvetica, sans-serif;
     font-size: 22pt;
 
     display: flex;
@@ -63,9 +62,9 @@ iframe {
 }
 
 h1 {
-    font-family: 'Gabarito', Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Dela Gothic One', Verdana, Arial, Helvetica, sans-serif;
     color: #FC6320;
-    margin: 2px auto;
+    margin: 2px auto 20px auto;
     padding: 20px;
     font-size: 2.5em;
     line-height: 1.05em;
@@ -74,10 +73,10 @@ h1 {
 }
 
 h2 {
-    font-family: 'Gabarito', Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Dela Gothic One', Verdana, Arial, Helvetica, sans-serif;
     color: orange; /*#3C4349;*/
     font-size: 1.5em;
-    margin: 5px auto;
+    margin: 5px auto 20px auto;
     /*text-align: center;*/
     text-shadow: 1px 2px 0 rgba(0,0,0,0.3), -1px -1px 0 #3C4349, 1px -1px 0 #3C4349, -1px 1px 0 #3C4349, 1px 1px 0 #3C4349;
 }
