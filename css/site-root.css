@@ -36,7 +36,7 @@ a {
 
     display: inline-block;
 }
-#page a:hover {
+#page a.grow:hover {
     background-color: #ff6000;
     color: white;
     padding: 5px;
@@ -44,12 +44,6 @@ a {
     transition: 0.5s ease-out;
     border-radius: 5px;
     text-shadow: none;
-}
-#page a.no-grow:hover {
-    padding: none;
-    border-radius: 0;
-    background-color: transparent;
-    transform: none;
 }
 
 iframe {
