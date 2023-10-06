@@ -32,66 +32,6 @@
         <meta name="keywords" content="Tiny Goose,TinyGoose,C++,C#,Godot,Unreal,video games,games,gamedev,indie,studio,Objective-C,iPhone,iPad,iOS,Joe Flood,C,CSharp,C#,Javawag,software,mobile" />
         <meta name="author" content="Joe Flood" />
 
-        <!-- Page styles here -->
-        <style>
-            div#joe-image {
-                float: right;
-                background-image: url(https://1.gravatar.com/avatar/21340e8a3fa99c6e5c874354246cf73bcfa09519a30d260922beb40cce7d24d4?size=256);
-                background-size: 200px 200px;
-                
-                width: 200px;
-                height: 200px;
-             
-                margin: 20px;
-                
-                border-radius: 100px;
-                border-style: solid;
-                border-color: #FC6320;
-                border-width: 5px;
-            }
-            
-            li.padded {
-                margin-top: 8px;
-                margin-bottom: 8px;
-            }
-            
-            img.social-icon {
-                transition: 0.5s all;
-                -webkit-transition: 0.5s all;
-                
-                width: 48px;
-                height: 48px;
-                
-                margin-right: 5px;
-                margin-top: 16px;
-            }
-            
-            img.social-icon:hover {
-                width: 64px;
-                height: 64px;
-                
-                margin-top: 0px;
-            }
-            
-            img.big-social-icon {
-                transition: 0.5s all;
-                -webkit-transition: 0.5s all;
-                
-                width: 64px;
-                height: 64px;
-                
-                margin-right: 5px;
-                margin-top: 16px;
-            }
-            
-            img.big-social-icon:hover {
-                width: 96px;
-                height: 96px;
-                
-                margin-top: 0px;
-            }
-        </style>
-
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ES5CDYQQQV"></script>
         <script>
@@ -105,62 +45,20 @@
         <div id="wrapper">
             <div id="contentliquid">
                 <div id="content">
-                    <h1>Tiny Goose</h1>
-                    <div class="pad">
-                        We are an indie game studio based in the South of England. We're just getting started, but we're definitely working on a few things.
-                        <a href="games.html">More info on those things</a> will come when they're ready to show!
-                    </div>
+                    <div id="page">
+                    
+                    </div>	
+                    <div id="footer">
+                        <!-- FOOTER -->
+                        <div style="clear:both"></div>
                             
-                    <br/> <hr/><br/>
-                    
-                   
-                    
-                    <h2>Joe Flood - Founder & Lead Code Monkey</h2>
-                    <div id="joe-image"> </div>
-                    
-                    <div>
-                        I'm a <span id="age">🤷</span>-year-old guy from Kent, England, keeping himself busy writing and playing computer games! Oh look, there I am! &rarr;
-                    </div>
+                        <hr>
             
-                    <br />
-            
-                    <div>
-                        I'm using Unity right now.
+                        ©2016-2023 TinyGoose Ltd. All rights reserved.
+                        <br>
+                        TinyGoose Limited is a company registered in England &amp; Wales with company number 10285773.
                     </div>
-
-                    <br />
-
-                    <div>
-                        But I also have experience in UE5 and Godot 4.
-                    </div>
-                    
-                    <br />
-                    
-                    <div>
-                        And in case you were wondering what came before even that, here's what I used previously:
-                            <ul>
-                                <li class="padded"><a href="https://en.wikipedia.org/wiki/C%2B%2B"> C++</a> (for engine & game code programming)</li>
-                                <li class="padded"><a href="https://www.lua.org/">                  Lua</a> (for gameplay scripting)</li>                                                
-                                <li class="padded"><a href="https://www.libsdl.org/index.php">      SDL2</a> (for Windowing and Input)</li>
-                                <li class="padded"><a href="https://www.opengl.org/">               OpenGL</a> (for 2D/3D rendering)</li>
-                                <li class="padded"><a href="https://www.fmod.org/">                 fmod</a> (for sound/music)</li>
-                                <li class="padded"><a href="http://glew.sourceforge.net/">          GLEW</a> (boilerplate code for setting up an OpenGL context)</li>                                                
-                                <li class="padded"><a href="https://github.com/ocornut/imgui">      Dear ImGui</a> (for debug UIs)</li>                        
-                                <li class="padded"><a href="https://github.com/nothings/stb">       STB</a> (miscellaneous classes for Image Loading, etc.)</li>                                                
-                                <li class="padded"><a href="http://bulletphysics.org/">             Bullet Physics</a> (for 2D/3D physics)</li>                                                
-                            </ul> 
-                    </div>
-                    
-                    <br />
-                           
-                    <!-- Social Icons -->
-                    <a href="https://www.facebook.com/jflood1" target="_blank"><img src="/img/social/facebook.png" class="social-icon"></img></a>
-                    <a href="https://twitter.com/javawag" target="_blank"><img src="/img/social/twitter.png" class="social-icon"></img></a>
-                    <a href="http://www.linkedin.com/profile/view?id=204484236" target="_blank"><img src="/img/social/linkedin.png" class="social-icon"></img></a>
-                    <a href="https://instagram.com/javawag" target="_blank"><img src="/img/social/insta.png" class="social-icon"></img></a>
-                    <a href="https://www.reddit.com/u/javawag" target="_blank"><img src="/img/social/reddit.png" class="social-icon"></img></a>
-                    <a href="mailto:joe@tinygoose.com"><img src="/img/social/email.png" class="social-icon"></img></a>
-                </div>	
+                </div>	                
             </div>
         </div>                     
         
@@ -173,6 +71,8 @@
             $(function() {
                 $("#age").text(getJoesAge());
             });
+
+            go('/about.html');
         </script>
     </body>
 </html>

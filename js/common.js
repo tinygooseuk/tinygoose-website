@@ -18,6 +18,21 @@ function getArgs() {
     argList.forEach(function(arg) { obj[arg.split('=')[0]] = arg.split('=')[1]; });
     return obj;
 }
+function go(page) {
+    let content = $("#page");
+    content.addClass("hidden");
+
+    $.ajax( {
+        url: page,
+        type: "GET",
+        cache: false,
+        success: function(html) {
+            content.empty();
+            content.html(html);
+            content.removeClass("hidden");
+        }
+    });   
+}
 
 $(() => {
     // Setup nav
@@ -32,38 +47,26 @@ $(() => {
     $("#wrapper").prepend($(navRoot));
 
     const links = [
-        { title: "Home", url: "/" },
+        { title: "Home", url: "/about.html" },
         { title: "Games", url: "/games.html" },
         { title: "Assets", url: "/assets.html" },
         { title: "Contact Us", url: "/contact.html" }, 
     ];
 
     links.forEach(link => {
-        let linkEl = $('<a class="nav-link"></a>');
-        linkEl.attr("href", link.url);
-        linkEl.text(link.title);
-        
         let liEl = $('<li class="nav-item"></li>');
-        linkEl.appendTo(liEl);
+        
+        let linkEl = $('<a class="nav-link" href="#"></a>');
+        linkEl.text(link.title);
+
+        $(linkEl).on('click', ()=>{
+            go(link.url);         
+        });
+        liEl.append(linkEl);        
        
         liEl.appendTo("#nav-links");
     });
     $('<br/>').appendTo("#nav-links");
-
-    // Add footer
-    let footer = `
-        <div id="footer">
-            <!-- FOOTER -->
-            <div style="clear:both"></div>
-                
-            <hr />
-
-            &copy;2016-${getYear()} TinyGoose Ltd. All rights reserved.
-            <br />
-            TinyGoose Limited is a company registered in England & Wales with company number 10285773.
-        </div>
-    `;
-    $(footer).appendTo("#content");
 
     // Fire analytics
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

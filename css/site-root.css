@@ -52,6 +52,10 @@ iframe {
 #content {
     padding: 20px 200px;
 }
+.hidden {
+    opacity: 0;
+    transition: 0.5s linear;
+}
 
 #contentliquid {
     background-color: white;
@@ -83,6 +87,65 @@ h2 {
 
 li {
     line-height: 30px;
+}
+
+
+li.padded {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* Socials */
+div#joe-image {
+    float: right;
+    background-image: url(https://1.gravatar.com/avatar/21340e8a3fa99c6e5c874354246cf73bcfa09519a30d260922beb40cce7d24d4?size=256);
+    background-size: 200px 200px;
+    
+    width: 200px;
+    height: 200px;
+ 
+    margin: 20px;
+    
+    border-radius: 100px;
+    border-style: solid;
+    border-color: #FC6320;
+    border-width: 5px;
+}
+
+img.social-icon {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    
+    width: 48px;
+    height: 48px;
+    
+    margin-right: 5px;
+    margin-top: 16px;
+}
+
+img.social-icon:hover {
+    width: 64px;
+    height: 64px;
+    
+    margin-top: 0px;
+}
+
+img.big-social-icon {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    
+    width: 64px;
+    height: 64px;
+    
+    margin-right: 5px;
+    margin-top: 16px;
+}
+
+img.big-social-icon:hover {
+    width: 96px;
+    height: 96px;
+    
+    margin-top: 0px;
 }
 
 /* Logo etc. */
