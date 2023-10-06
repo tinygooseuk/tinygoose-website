@@ -88,6 +88,7 @@ li {
 /* Logo etc. */
 #banner-link {
     display: inline-flex;
+    margin: 15px;
 }
 
 #banner-logo {
