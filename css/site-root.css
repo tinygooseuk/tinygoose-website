@@ -113,39 +113,26 @@ div#joe-image {
 }
 
 img.social-icon {
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
+    transition: 0.5s all ease-in-out;
     
     width: 48px;
     height: 48px;
     
     margin-right: 5px;
-    margin-top: 16px;
+
+    border: transparent 4px solid;
+    border-radius: 50px;
 }
 
 img.social-icon:hover {
-    width: 64px;
-    height: 64px;
-    
-    margin-top: 0px;
+    transform: rotate(360deg) scale(2.0);
+    border: #ff6000 4px solid;
+    border-radius: 50px;
 }
 
-img.big-social-icon {
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    
+img.big {
     width: 64px;
     height: 64px;
-    
-    margin-right: 5px;
-    margin-top: 16px;
-}
-
-img.big-social-icon:hover {
-    width: 96px;
-    height: 96px;
-    
-    margin-top: 0px;
 }
 
 /* Logo etc. */
