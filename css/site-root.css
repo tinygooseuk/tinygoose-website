@@ -100,60 +100,6 @@ li {
     background-image: url(/img/logo.png);
     background-size: 271px 106px;
 }
-/* #banner-logo:hover {
-    animation: logo-wiggle linear 0.2s;
-    animation-iteration-count: infinite;
-    transform-origin: 50% 85%;
-    -webkit-animation: logo-wiggle linear 0.2s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-transform-origin: 50% 85%;
-    -moz-animation: logo-wiggle linear 0.2s;
-    -moz-animation-iteration-count: infinite;
-    -moz-transform-origin: 50% 85%;
-    -o-animation: logo-wiggle linear 0.2s;
-    -o-animation-iteration-count: infinite;
-    -o-transform-origin: 50% 85%;
-   
-    background-image: url(/img/banner-logo-hover.png);
-} */
-
-
-@keyframes logo-wiggle{
-  0% { transform:  rotate(0deg); }
-  18% { transform:  rotate(-15deg); }
-  70% {  transform:  rotate(15deg); }
-  100% { transform:  rotate(0deg) ; }
-}
-
-@-moz-keyframes logo-wiggle {
-  0% { -moz-transform:  rotate(0deg); }
-  18% { -moz-transform:  rotate(-15deg); }
-  70% { -moz-transform:  rotate(15deg); }
-  100% { -moz-transform:  rotate(0deg); }
-}
-
-@-webkit-keyframes logo-wiggle {
-  0% { -webkit-transform:  rotate(0deg); }
-  18% { -webkit-transform:  rotate(-15deg); }
-  70% { -webkit-transform:  rotate(15deg); }
-  100% { -webkit-transform:  rotate(0deg); }
-}
-
-@-o-keyframes logo-wiggle {
-  0% { -o-transform:  rotate(0deg); }
-  18% { -o-transform:  rotate(-15deg); }
-  70% { -o-transform:  rotate(15deg); }
-  100% { -o-transform:  rotate(0deg); }
-}
-
-@-ms-keyframes logo-wiggle {
-  0% { -ms-transform:  rotate(0deg); }
-  18% { -ms-transform:  rotate(-15deg); }
-  70% { -ms-transform:  rotate(15deg); }
-  100% { -ms-transform:  rotate(0deg) ; }
-}
-
-
 
 
 ul#nav-links {
@@ -192,17 +138,13 @@ hr {
 
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: white;
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
-    background-color: white;
+    background-color: transparent;
 }
  
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-    background-color: #FC6320;
+    background-color: #F060F0;
 }
