@@ -33,6 +33,23 @@ p {
 a {
     color: #FC6320;
     text-shadow: 0px 0px 4px orange;
+
+    display: inline-block;
+}
+#page a:hover {
+    background-color: #ff6000;
+    color: white;
+    padding: 5px;
+    transform: scale(1.5);
+    transition: 0.5s ease-out;
+    border-radius: 5px;
+    text-shadow: none;
+}
+#page a.no-grow:hover {
+    padding: none;
+    border-radius: 0;
+    background-color: transparent;
+    transform: none;
 }
 
 iframe {
