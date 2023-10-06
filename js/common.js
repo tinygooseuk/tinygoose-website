@@ -21,7 +21,40 @@ function go(page) {
 }
 
 $(() => {
-      // Fire analytics
+    // Setup nav
+    let navRoot = `<!-- NAV -->
+        <nav>
+            <a id="banner-link" href="/">
+                <span id="banner-logo"></div>
+            </a>
+            
+            <ul id="nav-links" />                                                    
+        </nav>`;
+    $("#wrapper").prepend($(navRoot));
+
+    const links = [
+        { title: "Home", url: "/about.html" },
+        { title: "Games", url: "/games.html" },
+        { title: "Assets", url: "/assets.html" },
+        { title: "Contact Us", url: "/contact.html" }, 
+    ];
+
+    links.forEach(link => {
+        let liEl = $('<li class="nav-item"></li>');
+        
+        let linkEl = $('<a class="nav-link" href="#"></a>');
+        linkEl.text(link.title);
+
+        $(linkEl).on('click', ()=>{
+            go(link.url);         
+        });
+        liEl.append(linkEl);        
+       
+        liEl.appendTo("#nav-links");
+    });
+    $('<br/>').appendTo("#nav-links");
+
+    // Fire analytics
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
