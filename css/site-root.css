@@ -120,7 +120,6 @@ li.nav-item:hover {
 a.nav-link {
     color: white;
     text-decoration: none;
-    /* color: white; */
     text-shadow: 3px 3px 0 rgba(0,0,0,0.3), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
