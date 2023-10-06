@@ -1,23 +1,9 @@
-function getYear() {
-    return new Date().getFullYear();
-}
-
 function getJoesAge() {
     let diff = new Date() - new Date("1990/08/20");
 
     return Math.floor(diff / 1000 / 60 / 60 / 24 / 365);
 }
 
-function getArgString() {
-    return window.location.href.indexOf('?') != -1 ? window.location.href.split('?')[1] : "";
-}
-function getArgs() {
-    let argList = getArgString().split("&");
-
-    var obj = {};
-    argList.forEach(function(arg) { obj[arg.split('=')[0]] = arg.split('=')[1]; });
-    return obj;
-}
 function go(page) {
     let content = $("#page");
     content.addClass("hidden");
