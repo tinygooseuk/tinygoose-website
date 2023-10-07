@@ -2,9 +2,9 @@
 <html>
     <body>
         <h1>Tiny Goose is...</h1>
-        <div class="pad">
+        <div>
             An indie game studio based in the South of England. We're just getting started, but we're definitely working on a few things!
-            <a class="grow" href="javascript:go('/games.html')">More info on those things</a> will come when they're ready to show!
+            <a class="grow" href="javascript:TGCommon.GoTo('/games.html')">More info on those things</a> will come when they're ready to show!
         </div>
                 
         <br/> <hr/><br/>
@@ -57,7 +57,7 @@
         <a href="mailto:joe@tinygoose.com"><img src="/img/social/email.png" class="social-icon"></img></a>
 
         <script type="text/javascript">
-            $("#age").text(getJoesAge());
+            $("#age").text(TGCommon.GetJoesAge());
         </script>
     </body>	
 </html>

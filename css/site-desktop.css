@@ -1,5 +1,7 @@
 /* Desktop-specific overrides */
-li.nav-item:hover {
+
+li.nav-item:hover 
+{
     transform: scale(1.4);
     background-color: #FC6320;
     padding: 20px 40px;

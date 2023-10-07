@@ -1,11 +1,22 @@
 /* Root/Base CSS file */
+
+
+/****************************************************************************/
+/*      Fonts */
+/****************************************************************************/
 @import url('//fonts.googleapis.com/css?family=Dela+Gothic+One|Roboto');
 
-html {
+
+/****************************************************************************/
+/*      Main components */
+/****************************************************************************/
+html 
+{
     height: 100%;
 }
 
-nav {
+nav 
+{
     color: white;
     font-family: 'Dela Gothic One', Verdana, Arial, Helvetica, sans-serif;
     font-size: 22pt;
@@ -13,7 +24,8 @@ nav {
     display: flex;
 }
 
-body {
+body 
+{
     background-color: #800080;
 
     font-family: 'Roboto', Verdana, Arial, Helvetica, sans-serif;
@@ -26,57 +38,42 @@ body {
     margin:0px;
 }
 
-p {
+#content 
+{
+    padding: 20px 200px;
+}
+
+#wrapper 
+{
+    width: 100%;
+    max-width: 4000px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#footer 
+{
+    font-size: 70%;
+}
+
+
+/****************************************************************************/
+/*      Main element types */
+/****************************************************************************/
+p 
+{
     padding: 10px;
 }
 
-a {
-    color: #FC6320;
-    text-shadow: 0px 0px 4px orange;
-
-    display: inline-block;
-}
-#page a.grow:hover {
-    background-color: #ff6000;
-    color: white;
-    padding: 5px;
-    transform: scale(1.5);
-    transition: 0.5s ease-out;
-    border-radius: 5px;
-    text-shadow: none;
-}
-
-iframe {
+iframe 
+{
     display: block;
     width: 75%;
     margin: auto
 }
 
-
-#wrapper {
-    width: 100%;
-    max-width: 4000px;
-    margin: 0 auto;
-}
-
-
-#content {
-    padding: 20px 200px;
-}
-.hidden {
-    opacity: 0;
-    transition: 0.5s linear;
-}
-
-#contentliquid {
-    background-color: white;
-}
-
-#footer {
-    font-size: 70%;
-}
-
-h1 {
+h1 
+{
     font-family: 'Dela Gothic One', Verdana, Arial, Helvetica, sans-serif;
     color: #FC6320;
     margin: 2px auto 20px auto;
@@ -87,7 +84,8 @@ h1 {
     text-shadow: 1px 2px 0 rgba(0,0,0,0.3), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-h2 {
+h2 
+{
     font-family: 'Dela Gothic One', Verdana, Arial, Helvetica, sans-serif;
     color: orange; /*#3C4349;*/
     font-size: 1.5em;
@@ -96,18 +94,46 @@ h2 {
     text-shadow: 1px 2px 0 rgba(0,0,0,0.3), -1px -1px 0 #3C4349, 1px -1px 0 #3C4349, -1px 1px 0 #3C4349, 1px 1px 0 #3C4349;
 }
 
-li {
+li 
+{
     line-height: 30px;
+
+    &.padded
+    {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
 }
 
 
-li.padded {
-    margin-top: 8px;
-    margin-bottom: 8px;
+/****************************************************************************/
+/*      Links */
+/****************************************************************************/
+a 
+{
+    color: #FC6320;
+    text-shadow: 0px 0px 4px orange;
+
+    display: inline-block;
 }
 
-/* Socials */
-div#joe-image {
+#page a.grow:hover 
+{
+    background-color: #ff6000;
+    color: white;
+    padding: 5px;
+    transform: scale(1.5);
+    transition: 0.5s ease-out;
+    border-radius: 5px;
+    text-shadow: none;
+}
+
+
+/****************************************************************************/
+/*      Social Icons */
+/****************************************************************************/
+#joe-image 
+{
     float: right;
     background-image: url(https://1.gravatar.com/avatar/21340e8a3fa99c6e5c874354246cf73bcfa09519a30d260922beb40cce7d24d4?size=256);
     background-size: 200px 200px;
@@ -123,7 +149,8 @@ div#joe-image {
     border-width: 5px;
 }
 
-img.social-icon {
+.social-icon 
+{
     transition: 0.5s all ease-in-out;
     
     width: 48px;
@@ -133,20 +160,25 @@ img.social-icon {
 
     border: transparent 4px solid;
     border-radius: 50px;
+
+    &:hover
+    {
+        transform: rotate(360deg) scale(2.0);
+        border: #ff6000 4px solid;
+        border-radius: 50px;
+    }
+
+    &.big
+    {
+        width: 64px;
+        height: 64px;
+    }
 }
 
-img.social-icon:hover {
-    transform: rotate(360deg) scale(2.0);
-    border: #ff6000 4px solid;
-    border-radius: 50px;
-}
 
-img.big {
-    width: 64px;
-    height: 64px;
-}
-
-/* Logo etc. */
+/****************************************************************************/
+/*      Logo */
+/****************************************************************************/
 #banner-link {
     display: inline-flex;
     margin: 15px;
@@ -163,46 +195,69 @@ img.big {
 }
 
 
-ul#nav-links {
+/****************************************************************************/
+/*      Nav Bar */
+/****************************************************************************/
+ul#nav-links 
+{
     list-style-type: none;
     display: inline-flex;
 }
 
-li.nav-item {
+li.nav-item 
+{
     margin: 15px 15px !important;
     transition: 0.5s all !important;
     display: block;
     margin: auto 20px !important;
 }
 
-
-a.nav-link {
+a.nav-link 
+{
     color: white;
     text-decoration: none;
     text-shadow: 3px 3px 0 rgba(0,0,0,0.3), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-
-hr {
+hr 
+{
     height:1px;
     background-color: gray;
 }
 
-.image-round {
+
+/****************************************************************************/
+/*      Classes */
+/****************************************************************************/
+.image-round 
+{
     max-width: 50%;
     display: block;
     margin: auto;
 }
 
-::-webkit-scrollbar {
+.hidden 
+{
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+
+/****************************************************************************/
+/*      Scrollbars */
+/****************************************************************************/
+::-webkit-scrollbar 
+{
     width: 10px;
     background-color: transparent;
 }
 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track 
+{
     background-color: transparent;
 }
  
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb 
+{
     background-color: #F060F0;
 }

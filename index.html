@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
+    <!-- Hand-written layout by Tiny Goose :) -->
     <head>
+        <!-- Title -->
         <title>Tiny Goose</title>
         
+        <!-- Viewport setup -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         
+        <!-- Site icons and theme -->
         <link rel="apple-touch-icon" sizes="57x57" href="/img/icon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/img/icon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/img/icon/apple-icon-72x72.png">
@@ -24,43 +28,53 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#800080"/>
      
+        <!-- Styles -->
         <link rel="stylesheet"                              type="text/css" href="/css/site-root.css" />
-        <link rel="stylesheet" media="(min-width:1000px)"    type="text/css" href="/css/site-desktop.css" />
+        <link rel="stylesheet" media="(min-width:1000px)"   type="text/css" href="/css/site-desktop.css" />
         <link rel="stylesheet" media="(max-width:999px)"    type="text/css" href="/css/site-mobile.css" />
        
-        <meta name="description" content="Tiny Goose - British indie game studio" />
-        <meta name="keywords" content="Tiny Goose,TinyGoose,C++,C#,Godot,Unreal,video games,games,gamedev,indie,studio,Objective-C,iPhone,iPad,iOS,Joe Flood,C,CSharp,C#,Javawag,software,mobile" />
+        <!-- SEO -->
+        <meta name="description" content="Tiny Goose - UK indie game studio" />
+        <meta name="keywords" content="Tiny Goose,TinyGoose,Javawag,Joe Flood,Unity,C#,CSharp,C++,Godot,Unreal,video games,games,gamedev,indie,studio,software" />
         <meta name="author" content="Joe Flood" />
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ES5CDYQQQV"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){ dataLayer.push(arguments); }
             gtag('js', new Date());
             gtag('config', 'G-ES5CDYQQQV');
         </script>
     </head>
+
     <body>
+        <!-- Site Navigation -->
+        <nav>
+            <!-- ... generated in common.js -->
+        </nav> 
+
+        <!-- Wrapper around all content -->
         <div id="wrapper">
-            <div id="contentliquid">
-                <div id="content">
-                    <div id="page">
-                    
-                    </div>	
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Pane that pages are loaded into -->
+                <div id="page">    
+                    <!-- ... loaded from common.js -->
+                </div>	
+                                
+                <!-- Site Footer -->
+                <div id="footer">
+                    <div style="clear:both"></div>
                     <br />
-                    <div id="footer">
-                        <!-- FOOTER -->
-                        <div style="clear:both"></div>
-                            
-                        <hr>
-            
-                        ©2016-<span id="year">present</span> TinyGoose Ltd. All rights reserved.
-                        <br>
-                        TinyGoose Limited is a company registered in England &amp; Wales with company number 10285773.
-                    </div>
-                </div>	                
-            </div>
+
+                    <hr>
+        
+                    ©2016-<span id="year">present</span> TinyGoose Ltd. All rights reserved.
+                    <br>
+                    TinyGoose Limited is a company registered in England &amp; Wales with company number 10285773.
+                </div>
+            </div>	                
         </div>                     
         
         <!-- jQuery -->
@@ -70,7 +84,8 @@
         <!-- Page scripts here: -->
         <script type="text/javascript">
             $("#year").text(new Date().getFullYear());
-            go('/about.html');
+
+            TGCommon.GoTo('/about.html');
         </script>
     </body>
 </html>
