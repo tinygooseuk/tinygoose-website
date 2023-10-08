@@ -51,7 +51,7 @@ body
     background-color: white;
 }
 
-#footer 
+footer 
 {
     font-size: 70%;
 }
@@ -60,11 +60,6 @@ body
 /****************************************************************************/
 /*      Main element types */
 /****************************************************************************/
-p 
-{
-    padding: 10px;
-}
-
 iframe 
 {
     display: block;
@@ -221,8 +216,10 @@ a.nav-link
 
 hr 
 {
-    height:1px;
-    background-color: gray;
+    background-color: transparent;
+    border: none;
+    border-top: #ff6000 2px dashed;
+    margin: 40px 0;
 }
 
 
