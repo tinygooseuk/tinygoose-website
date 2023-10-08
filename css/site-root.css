@@ -112,6 +112,12 @@ a
     display: inline-block;
 }
 
+#page
+{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
 #page a.grow:hover 
 {
     background-color: #ff6000;
