@@ -26,15 +26,8 @@
                 margin: 0 auto;
             }
 
-            #error
-            {
-                text-align: center;
-            }
-
-            #details
-            {
-                font-size: 50%;
-            }
+            #error { text-align: center; }
+            #details { font-size: 50%; }
         </style>
 
         <script type="text/javascript">
@@ -44,10 +37,12 @@
             {
                 // We really screwed up - bare page loaded - redirect to wrapped version
                 window.location = url.protocol + '//' + url.hostname +  "/#404/" + url.pathname
-                return;
             }
-
-            $("#details").text("Looks like you wanted '" + url.hash + "', which... yeah, it's not a thing.");
+            else
+            {
+                // We loaded - add cheeky error message
+                $("#details").text("Looks like you wanted '" + url.hash + "', which... yeah, it's not a thing.");
+            }
         </script>        
     </body>
 </html>
