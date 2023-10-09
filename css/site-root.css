@@ -196,6 +196,21 @@ a
 
     background-image: url(/img/tg-logo-new.png);
     background-size: 75px 103px;
+
+    &:hover
+    {
+        animation: logo-wiggle linear 0.3s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 85%;
+    }
+}
+
+@keyframes logo-wiggle
+{
+  0% { transform:  rotate(0deg); }
+  18% { transform:  rotate(-15deg); }
+  70% {  transform:  rotate(15deg); }
+  100% { transform:  rotate(0deg) ; }
 }
 
 
