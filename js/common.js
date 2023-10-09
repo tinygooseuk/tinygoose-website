@@ -1,5 +1,8 @@
 let TGCommon = 
 {
+    /****************************************************************************/
+    /*      Nav links - used to populate the navbar and to route users */
+    /****************************************************************************/
     NavigationLinks:
     [
         { title: "Home",        tag: "",         url: "/about.html" },
@@ -88,6 +91,24 @@ let TGCommon =
             liEl.appendTo("#nav-links");
         });
         $('<br/>').appendTo("#nav-links");
+    },
+
+    /****************************************************************************/
+    /*      Route the user to the right page */
+    /****************************************************************************/
+    HandleRouting: function()
+    {
+        const url = new URL(window.location);
+        const target = TGCommon.NavigationLinks.find(l => l.tag == url.hash);
+    
+        if (target === undefined || target.url === undefined)
+        {
+            TGCommon.GoTo("404.html");
+        }
+        else
+        {
+            TGCommon.GoTo(target.url);
+        }
     }
 };
 
@@ -97,6 +118,15 @@ let TGCommon =
 /****************************************************************************/
 $(() => 
 {
+    // Setup navigation
     TGCommon.SetupNav();
+
+    // Replace copyright year
+    $("#year").text(new Date().getFullYear());
+
+    // Work out where to go based on url
+    TGCommon.HandleRouting();
+
+    // GA call
     TGCommon.FireAnalytics('UA-86306734-3');
 });

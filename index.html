@@ -80,16 +80,5 @@
         <!-- jQuery -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script src="/js/common.js"></script>
-       
-        <!-- Page scripts here: -->
-        <script type="text/javascript">
-            // Replace copyright year
-            $("#year").text(new Date().getFullYear());
-
-            // Work out where to go based on url
-            const url = new URL(window.location);
-            const target = TGCommon.NavigationLinks.find(l => l.tag == url.hash);
-            TGCommon.GoTo(target.url);
-        </script>
     </body>
 </html>

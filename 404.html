@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Are you lost?!</h1>
+
+        <video autoplay loop src="https://i.imgur.com/mtGc7Sl.mp4"></video>
+
+        <div id="error">
+            <p>You've tried to go to a page that is categorically not a thing.</p>
+            <p>That's a shame.</p>
+            <p>Try clicking a link above to go somewhere that is a thing.</p>
+            <p>Best wishes and kind regards.</p>
+
+            <p id="details">
+
+            </p>
+        </div>
+
+        <style type="text/css">
+            video
+            {
+                width: 400px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            #error
+            {
+                text-align: center;
+            }
+
+            #details
+            {
+                font-size: 50%;;
+            }
+        </style>
+
+        <script type="text/javascript">
+            const url = new URL(window.location);
+            $("#details").text("Looks like you wanted '" + url.hash + "', which... yeah, it's not a thing.");
+        </script>        
+    </body>
+</html>
