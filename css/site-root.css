@@ -180,19 +180,25 @@ a
 /****************************************************************************/
 /*      Logo */
 /****************************************************************************/
-#banner-link {
+#banner-link 
+{
     display: inline-flex;
     margin: 15px;
 }
 
-#banner-logo {
-    width: 271px;
-    height: 106px;
+#banner-logo 
+{
+    width: 75px;
+    height: 103px;
         
     margin: 10px auto;
-      
+    margin-left: 60px;
+
     background-image: url(/img/logo.png);
     background-size: 271px 106px;
+
+    background-image: url(/img/NewLogo.png);
+    background-size: 75px 103px;
 }
 
 

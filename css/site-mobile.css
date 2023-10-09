@@ -8,7 +8,7 @@
 #nav-links 
 {
     display: block !important;
-    margin: 20px 30px 0 -120px;
+    margin: 20px 30px 0 0px;
     padding-left: 0;
 }
 
@@ -28,4 +28,5 @@ li.nav-item
 #banner-logo 
 {
     margin: 30px;
+    margin-left: 60px;
 }
