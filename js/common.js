@@ -1,5 +1,13 @@
 let TGCommon = 
 {
+    NavigationLinks:
+    [
+        { title: "Home",        tag: "",         url: "/about.html" },
+        { title: "Games",       tag: "#games",   url: "/games.html" },
+        { title: "Assets",      tag: "#assets",  url: "/assets.html" },
+        { title: "Contact Us",  tag: "#contact", url: "/contact.html" }, 
+    ],
+
     /****************************************************************************/
     /*      Return Joe's age, in years */
     /****************************************************************************/
@@ -67,19 +75,11 @@ let TGCommon =
         nav.empty();
         nav.html($(navHTML));
 
-        const links = 
-        [
-            { title: "Home",        tag: "",        url: "/about.html" },
-            { title: "Games",       tag: "games",   url: "/games.html" },
-            { title: "Assets",      tag: "assets",  url: "/assets.html" },
-            { title: "Contact Us",  tag: "contact", url: "/contact.html" }, 
-        ];
-
-        links.forEach(link => 
+        this.NavigationLinks.forEach(link => 
         {
             let liEl = $('<li class="nav-item"></li>');
             
-            let linkEl = $('<a class="nav-link" href="#' + link.tag + '"></a>');
+            let linkEl = $('<a class="nav-link" href="' + link.tag + '"></a>');
             linkEl.text(link.title);
 
             $(linkEl).on('click', () => TGCommon.GoTo(link.url));

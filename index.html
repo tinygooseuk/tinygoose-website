@@ -83,9 +83,13 @@
        
         <!-- Page scripts here: -->
         <script type="text/javascript">
+            // Replace copyright year
             $("#year").text(new Date().getFullYear());
 
-            TGCommon.GoTo('/about.html');
+            // Work out where to go based on url
+            const url = new URL(window.location);
+            const target = TGCommon.NavigationLinks.find(l => l.tag == url.hash);
+            TGCommon.GoTo(target.url);
         </script>
     </body>
 </html>
