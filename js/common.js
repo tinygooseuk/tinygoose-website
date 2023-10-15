@@ -5,10 +5,10 @@ let TGCommon =
     /****************************************************************************/
     NavigationLinks:
     [
-        { title: "Home",        tag: "",         url: "/about.html" },
-        { title: "Games",       tag: "#games",   url: "/games.html" },
-        { title: "Assets",      tag: "#assets",  url: "/assets.html" },
-        { title: "Contact Us",  tag: "#contact", url: "/contact.html" }, 
+        { title: "Home",        tag: "",            href: "/",         url: "/about.html" },
+        { title: "Games",       tag: "#games",      href: "/games",   url: "/games.html" },
+        { title: "Assets",      tag: "#assets",     href: "/assets",  url: "/assets.html" },
+        { title: "Contact Us",  tag: "#contact",    href: "/contact", url: "/contact.html" }, 
     ],
 
     /****************************************************************************/
@@ -32,7 +32,7 @@ let TGCommon =
         {
             url: where,
             type: "GET",
-            cache: false,
+            //cache: false,
             success: function(html) 
             {
                 content.empty();
@@ -82,10 +82,10 @@ let TGCommon =
         {
             let liEl = $('<li class="nav-item"></li>');
             
-            let linkEl = $('<a class="nav-link" href="' + link.tag + '"></a>');
+            let linkEl = $('<a class="nav-link" href="' + link.href + '"></a>');
             linkEl.text(link.title);
 
-            $(linkEl).on('click', () => TGCommon.GoTo(link.url));
+            $(linkEl).on('click', () => { TGCommon.GoTo(link.url); return false; });
             liEl.append(linkEl);        
         
             liEl.appendTo("#nav-links");
