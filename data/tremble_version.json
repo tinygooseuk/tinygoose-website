@@ -1,0 +1,20 @@
+{
+    "changes":
+    [
+        {
+            "version": 1005000,
+            "changes":
+            [
+                "Support automated updates",
+                "Better async support"
+            ]
+        },
+        {
+            "version": 1004000,
+            "changes":
+            [
+                "Initial Version"
+            ]
+        }
+    ]
+}
