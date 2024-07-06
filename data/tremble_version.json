@@ -2,7 +2,7 @@
     "Changes":
     [
         {
-            "Version": 1005000,
+            "Version": "1.5.0",
             "Changes":
             [
                 "Support automated updates",
@@ -10,7 +10,7 @@
             ]
         },
         {
-            "Version": 1004000,
+            "Version": "1.4.0",
             "Changes":
             [
                 "Initial Version"
