@@ -2,6 +2,15 @@
     "Changes":
     [
         {
+            "Version": "1.6.0",
+            "Changes":
+            [
+                "Embed Tremble's settings in Project Settings window",
+                "Speed improvements across the board",
+                "Bugfix for German locale (thanks Lord Rhinox from Discord!)"
+            ]
+        },
+        {
             "Version": "1.5.0",
             "Changes":
             [
