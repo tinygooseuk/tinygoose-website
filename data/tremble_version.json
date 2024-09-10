@@ -2,6 +2,20 @@
     "Changes":
     [
         {
+            "Version": "1.7.0",
+            "Changes":
+            [
+                "Much better handling of imported FGD files",
+                "Import texture WAD files!",
+                "Brand new interactive manual with wizards for creating entities and more",
+                "Streamlined Map Repair window",
+                "New 'pipeline' settings to disable/enable stages that you don't need",
+                "Better support for HDRP",
+                "20+ bugfixes and performance improvements",
+                "Speed improvements across the board"
+            ]
+        },
+        {
             "Version": "1.6.1",
             "Changes":
             [
