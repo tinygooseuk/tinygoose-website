@@ -2,6 +2,18 @@
     "Changes":
     [
         {
+            "Version": "1.8.0",
+            "Changes":
+            [
+                "Add support for TrenchBroom 2024.2",
+                "Support multiple map processors",
+                "Support customising import pipeline stages (& profiling them)",
+                "Add 'skip' texture support",
+                "Upgrades to the interactive manual",
+                "5+ bugfixes"
+            ]
+        },
+        {
             "Version": "1.7.0",
             "Changes":
             [
