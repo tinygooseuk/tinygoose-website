@@ -11,7 +11,8 @@
                 "Add 'skip' texture support",
                 "Upgrades to the interactive manual",
                 "5+ bugfixes"
-            ]
+            ],
+            "Q3Map2Hash": "cebc22a"
         },
         {
             "Version": "1.7.0",
@@ -25,7 +26,8 @@
                 "Better support for HDRP",
                 "20+ bugfixes and performance improvements",
                 "Speed improvements across the board"
-            ]
+            ],
+            "Q3Map2Hash": "cebc22a"
         },
         {
             "Version": "1.6.1",
@@ -33,7 +35,8 @@
             [
                 "Bugfix: Error when using 'separate booleans' instead of packing into spawnflags",
                 "Bugfix: Error when importing into a new project, where baseq3 folder does not exist"
-            ]
+            ],
+            "Q3Map2Hash": "cebc22a"
         },
         {
             "Version": "1.6.0",
@@ -42,7 +45,8 @@
                 "Embed Tremble's settings in Project Settings window",
                 "Speed improvements across the board",
                 "Bugfix for German locale (thanks Lord Rhinox from Discord!)"
-            ]
+            ],
+            "Q3Map2Hash": "cebc22a"
         },
         {
             "Version": "1.5.0",
@@ -50,7 +54,8 @@
             [
                 "Support automated updates (VersionCheck)",
                 "Better async support"
-            ]
+            ],
+            "Q3Map2Hash": "cebc22a"
         },
         {
             "Version": "1.4.0",
@@ -58,28 +63,32 @@
             [
                 "Async level loading when loading maps at runtime",
                 "Pre-cache assets during runtime map loading for faster loading times"
-            ]
+            ],
+            "Q3Map2Hash": "cebc22a"
         },
         {
             "Version": "1.3.1",
             "Changes":
             [
                 "Fix Unity 2021.3 support"
-            ]
+            ],
+            "Q3Map2Hash": "cebc22a"
         },
         {
             "Version": "1.3.0",
             "Changes":
             [
                 "Import maps at runtime"
-            ]
+            ],
+            "Q3Map2Hash": "cebc22a"
         },
         {
             "Version": "1.2.1",
             "Changes":
             [
                 "Minor bugfixes"
-            ]
+            ],
+            "Q3Map2Hash": "cebc22a"
         },
         {
             "Version": "1.2.0",
@@ -88,14 +97,17 @@
                 "HUGE speed improvements when importing maps",
                 "(Windows) Remove many unnecessary dependency DLLs",
                 "Add initial support for Linux"
-            ]
+            ],
+            "Q3Map2Hash": "cebc22a"
         },
         {
             "Version": "1.0.8",
             "Changes":
             [
                 "Initial Release!"
-            ]
+            ],
+            "Q3Map2Hash": "cebc22a"
         }
-    ]
+    ],
+    "Q3Map2Hash": "cebc22a"
 }
