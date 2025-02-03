@@ -2,6 +2,18 @@
     "Changes":
     [
         {
+            "Version": "1.9.0",
+            "Changes":
+            [
+                "New Icon!",
+                "New DLL downloader (+ remove existing updater)",
+                "Various minor upgrades",
+                "3 Bugfixes"
+            ],
+            "Q3Map2Hash": "cebc22a",
+            "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
+        },
+        {
             "Version": "1.8.0",
             "Changes":
             [
