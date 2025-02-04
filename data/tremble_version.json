@@ -5,8 +5,8 @@
             "Version": "1.9.0",
             "Changes":
             [
-                "New Icon!",
-                "New DLL downloader (+ remove existing updater)",
+                "New Icon & branding",
+                "New DLL updater to make updating Tremble easier",
                 "Various minor upgrades",
                 "3 Bugfixes"
             ],
