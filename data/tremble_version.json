@@ -11,6 +11,9 @@
                 "3 Bugfixes"
             ],
             "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "216cbb1",
             "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
         },
         {
@@ -25,6 +28,9 @@
                 "5+ bugfixes"
             ],
             "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "216cbb1",
             "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
         },
         {
@@ -41,6 +47,9 @@
                 "Speed improvements across the board"
             ],
             "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "216cbb1",
             "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
         },
         {
@@ -51,6 +60,9 @@
                 "Bugfix: Error when importing into a new project, where baseq3 folder does not exist"
             ],
             "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "216cbb1",
             "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
         },
         {
@@ -62,6 +74,9 @@
                 "Bugfix for German locale (thanks Lord Rhinox from Discord!)"
             ],
             "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "216cbb1",
             "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
         },
         {
@@ -72,6 +87,9 @@
                 "Better async support"
             ],
             "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "216cbb1",
             "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
         },
         {
@@ -82,6 +100,9 @@
                 "Pre-cache assets during runtime map loading for faster loading times"
             ],
             "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "216cbb1",
             "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
         },
         {
@@ -91,6 +112,9 @@
                 "Fix Unity 2021.3 support"
             ],
             "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "216cbb1",
             "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
         },
         {
@@ -100,6 +124,9 @@
                 "Import maps at runtime"
             ],
             "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "216cbb1",
             "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
         },
         {
@@ -109,6 +136,9 @@
                 "Minor bugfixes"
             ],
             "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "216cbb1",
             "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
         },
         {
@@ -120,6 +150,9 @@
                 "Add initial support for Linux"
             ],
             "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "216cbb1",
             "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
         },
         {
@@ -129,9 +162,10 @@
                 "Initial Release!"
             ],
             "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "216cbb1",
             "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
         }
-    ],
-    "Q3Map2Hash": "cebc22a",
-    "Q3Map2Url": "https://tinygoose.com/data/q3map2_cebc22a.tpak"
+    ]
 }
