@@ -1,6 +1,21 @@
 {
     "Changes":
     [
+         {
+            "Version": "1.10.0",
+            "Changes":
+            [
+                "Support for larger map files",
+                "Add new texture-based and non-square material sync (contributed by Andicraft)",
+                "Major: Add support for Trenchbroom 2025.3",
+                "Various minor upgrades",
+                "16+ Bugfixes"
+            ],
+            "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "6018cf2a"
+        },
         {
             "Version": "1.9.1",
             "Changes":
