@@ -3,9 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Redirecting…</title>
+    <title>Opening in Wires...</title>
     <script>
       (function () {
+        var msgEl = null;
+        function setMessage(html) {
+          if (!msgEl) { msgEl = document.getElementById('message'); }
+          if (msgEl) { msgEl.innerHTML = html; }
+        }
+
         try {
           var params = new URLSearchParams(window.location.search);
           var seed = params.get('seed');
@@ -13,31 +19,44 @@
 
           var target = null;
           if (seed) {
-            // Preserve raw value in the path segment, but ensure it's URI-encoded
             target = 'tg-wires://seed/' + encodeURIComponent(seed);
           } else if (custom) {
             target = 'tg-wires://custom/' + encodeURIComponent(custom);
           }
 
           if (target) {
+            // Track if we got backgrounded (likely means the app opened)
+            var hidden = false;
+            var onVis = function() { hidden = document.hidden; };
+            document.addEventListener('visibilitychange', onVis, { once: false });
+
             // Attempt an immediate redirect to the custom URL scheme
-            if (window.location && window.location.replace) {
-              window.location.replace(target);
-            } else {
-              window.location = target;
+            try {
+              if (window.location && window.location.replace) {
+                window.location.replace(target);
+              } else {
+                window.location = target;
+              }
+            } catch (_) {
+              // Ignore; we'll show fallback below
             }
+
+            // After a short delay, if we're still visible, assume scheme failed
+            var start = Date.now();
+            setTimeout(function () {
+              document.removeEventListener('visibilitychange', onVis);
+              // If the page never went hidden and enough time passed, show fallback
+              if (!hidden && Date.now() - start >= 1200) {
+                var downloadURL = 'https://example.com/wires'; // TODO: replace with real install page
+                setMessage('Couldn\'t open Wires. It might not be installed.\n<br><br>Install Wires and then try again.');
+              }
+            }, 1200);
           } else {
             // No recognized parameter, show a helpful message
-            var msg = document.getElementById('message');
-            if (msg) {
-              msg.textContent = 'Missing required query. Use ?seed=<seed> or ?custom=<custom-data>.';
-            }
+            setMessage('Missing required query. Use ?seed=<seed> or ?custom=<custom-data>.');
           }
         } catch (e) {
-          var msgEl = document.getElementById('message');
-          if (msgEl) {
-            msgEl.textContent = 'Error preparing redirect: ' + (e && e.message ? e.message : e);
-          }
+          setMessage('Error preparing redirect: ' + (e && e.message ? e.message : e));
         }
       })();
     </script>
@@ -49,6 +68,6 @@
     </style>
   </head>
   <body>
-	<p id="message">Opening Wires...p>
+	<p id="message">Opening Wires...</p>
   </body>
 </html>
