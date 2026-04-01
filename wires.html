@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redirecting…</title>
+    <script>
+      (function () {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var seed = params.get('seed');
+          var custom = params.get('custom');
+
+          var target = null;
+          if (seed) {
+            // Preserve raw value in the path segment, but ensure it's URI-encoded
+            target = 'tg-wires://seed/' + encodeURIComponent(seed);
+          } else if (custom) {
+            target = 'tg-wires://custom/' + encodeURIComponent(custom);
+          }
+
+          if (target) {
+            // Attempt an immediate redirect to the custom URL scheme
+            if (window.location && window.location.replace) {
+              window.location.replace(target);
+            } else {
+              window.location = target;
+            }
+          } else {
+            // No recognized parameter, show a helpful message
+            var msg = document.getElementById('message');
+            if (msg) {
+              msg.textContent = 'Missing required query. Use ?seed=<seed> or ?custom=<custom-data>.';
+            }
+          }
+        } catch (e) {
+          var msgEl = document.getElementById('message');
+          if (msgEl) {
+            msgEl.textContent = 'Error preparing redirect: ' + (e && e.message ? e.message : e);
+          }
+        }
+      })();
+    </script>
+    <style>
+      html, body { height: 100%; }
+      body { display: grid; place-items: center; font: 16px/1.4 -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; color: #222; }
+      a { color: #0b5fff; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+	<p id="message">Opening Wires...p>
+  </body>
+</html>
