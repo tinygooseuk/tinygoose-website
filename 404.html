@@ -36,7 +36,7 @@
             if (url.pathname.startsWith('/w/')) 
             {
                 // Wires redirect
-                const target = 'tg-wires://' + url.pathname.substring(3);
+                const target = url.hostname + '/wires.html?' + url.pathname.substring(3);
 
                 if (window.location && window.location.replace) 
                 {
