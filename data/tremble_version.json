@@ -1,6 +1,21 @@
 {
     "Changes":
     [
+        {
+            "Version": "1.11.0",
+            "Changes":
+            [
+                "Incorporate Q3Map2.dll into build",
+                "Add support for [Flags] enums",
+                "2 Pull Requests from @Henry00",
+                "Rename \"maintex\" -> Dynamic and \"legacy\" -> FixedSize",
+                "7+ Bugfixes"
+            ],
+            "Q3Map2Hash": "cebc22a",
+            "Q3Map2Hash_Windows": "216cbb1",
+            "Q3Map2Hash_Mac": "cebc22a",
+            "Q3Map2Hash_Linux": "cebc22a"
+        },
          {
             "Version": "1.10.0",
             "Changes":
